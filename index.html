@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="main.css" type="css"
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="New hip-hop music">
+  <meta name="keywords" content="Hip-hop, rap, singing, Legit Music">
+  <meta name="author" content="Detroit Kidd">
+  <meta name="author" content="Rajah639">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+  <script>
+  //$('nav-btns > li > a') if you change your class in html change nav-btns to your class
+    $(document).ready(function() {
+      $('.nav-btns > li > a').click(function(event){
+      event.preventDefault();//stop browser to take action for clicked anchor
+
+      //get displaying tab content jQuery selector
+      //change nav-btns if you change your class in html
+      var active_tab_selector = $('.nav-btns > li.active > a').attr('href');
+
+      //find actived navigation and remove 'active' css
+      //change nav-btns if you change your class in html
+      var actived_nav = $('.nav-btns > li.active');
+      actived_nav.removeClass('active');
+
+      //add 'active' css into clicked navigation
+      $(this).parents('li').addClass('active');
+
+      //hide displaying tab content
+      $(active_tab_selector).removeClass('active');
+      $(active_tab_selector).addClass('hide');
+
+      //show target tab content
+      var target_tab_selector = $(this).attr('href');
+      $(target_tab_selector).removeClass('hide');
+      $(target_tab_selector).addClass('active');
+         });
+      });
+  </script>
+</head>
+  <header>
+    <nav>
+      <div class="brand">
+      </div>
+        <ul class="nav-btns">
+          <li class="home"><a href="#">Home</a></li>
+          <li class="bio"><a href="#bio">Biography</a></li>
+          <li class="music"><a href="#music">Music</a></li>
+          <li class="tour"><a href="#tour">Tour</a></li>
+          <li class="contact" id="#footer"><a href="#contact">Contact me</a></li>
+        </ul>
+    </nav>
+  </header>
+<body>
+    <section class="landing tab-content active">
+      <a href="http://tinypic.com?ref=2gsioer" target="_blank"><img src="http://i67.tinypic.com/2gsioer.jpg" border="0" alt="Detroit Kidd" class="bio-pic"></a>
+    </section>
+    <section id="bio" class="sect tab-content hide">
+      <div class="brand" id="#">
+        <h1>
+          Detroit Kidds first heading.
+        </h1>
+        <p>
+          Lorem Ipsum sipsi doo ik el.
+        </p>
+      </div>
+    </section>
+    <section id="music"class="sect tab-content hide">
+      <div class="div">
+        <h2>
+          Music
+        </h2>
+        <p>
+
+        </p>
+      </div>
+    </section>
+    <section id="tour"class="sect tab-content hide">
+      <div class="div">
+        <h2>
+          Tour
+        </h2>
+        <p>
+          Tour Info
+        </p>
+      </div>
+    </section>
+    <footer>
+      <section id="contact" class="sect tab-content hide">
+        <div class="div" id="#contact">
+          <h2>
+            Connect
+          </h2>
+          <p>
+            Connect info
+          </p>
+        </div>
+      </section>
+    </footer>
+</body>

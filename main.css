@@ -1,0 +1,117 @@
+  body {
+    background-image: url('./Pictures/Abando.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 200px;
+    background-attachment: fixed;
+  }
+
+  nav {
+    float: left;
+    height: 100%;
+    background-color: purple;
+    padding: 75px;
+    margin-left: -50px;
+    margin-top: -135px;
+    z-index: 1;
+    background: blue;
+    background: -webkit-linear-gradient(#0255db, #0040a8, #012868, #00173d);
+  }
+
+  ul {
+    list-style-type: none;
+    list-style: none;
+    position: relative;
+  }
+
+  li {
+    margin-top: 3em;
+    margin-left: -50%;
+    font-size: 120%;
+    position: relative;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+  }
+
+ .home {
+   margin-top: 3em;
+
+ }
+
+ .bio {
+   margin-top: 3em;
+ }
+
+ .music {
+   margin-top: 3em;
+ }
+
+ .contact {
+   margin-top: 3em;
+ }
+
+ a {
+   text-decoration-style: none;
+   text-decoration: none;
+   color: black;
+ }
+
+  a:hover {
+    color: #d1d1d1;
+  }
+
+  a:visited {
+    color: #1e1e1e;
+  }
+
+  .bio-pic {
+    border-style: solid;
+    border-radius: 60%;
+    border-width: 5px;
+    border-color: #999ea8;
+    width: 350px;
+    margin-left: 48em;
+    margin-top: 8em;
+    display: block;
+  }
+
+  h1, h2, p {
+    font-family: 'Oswald', sans-serif;
+    color: #f7e6e6;
+  }
+
+  .div, h2 {
+    background-color: rgba(0,0,0,.65);
+  }
+
+  .sect {
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  .brand {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .tab-content.active{
+  display: block;
+}
+
+.tab-content.hide{
+  display: none;
+}
+
+.nav-tabs:before,
+.nav-tabs:after {
+  display: table;
+  content: "";
+}
+
+.nav-tabs:after {
+  clear: both;
+}
